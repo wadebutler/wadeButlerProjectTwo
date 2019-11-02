@@ -313,6 +313,7 @@ img {
   color: #4C0341;
   text-align: center;
   padding-top: 12%;
+  text-transform: uppercase;
 }
 
 .headerBlog .nav {
@@ -629,9 +630,57 @@ footer h4 {
           flex-direction: row-reverse;
 }
 
+.blog .blogFlex .asideWrapper {
+  background: white;
+  width: 90%;
+  margin-right: 10%;
+  margin-top: 20%;
+  padding: 5%;
+  position: relative;
+}
+
+.blog .blogFlex .asideWrapper .asideArticle {
+  padding-top: 380px;
+  margin-right: 50px;
+}
+
+.blog .blogFlex .asideWrapper .asideArticle h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  color: #4C0341;
+  padding-top: 5%;
+}
+
+.blog .blogFlex .asideWrapper .asideArticle p {
+  line-height: 35px;
+}
+
+.blog .blogFlex .asideWrapper .asideArticle ul {
+  margin-left: 5.5%;
+}
+
+.blog .blogFlex .asideWrapper .asideArticle ul li {
+  list-style: unset;
+  line-height: 35px;
+  font-size: 2rem;
+}
+
+.blog .blogFlex .asideWrapper .asidePhoto {
+  position: absolute;
+  width: 500px;
+  top: -3%;
+  right: 5%;
+}
+
 .blog .blogFlex .blogMain {
-  -ms-flex-preferred-size: 120%;
-      flex-basis: 120%;
+  -ms-flex-preferred-size: 150%;
+      flex-basis: 150%;
+}
+
+.blog .blogFlex .blogMain .commentSection blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blog .blogFlex .blogMain .comment {
@@ -639,12 +688,28 @@ footer h4 {
 }
 
 .blog .blogFlex .blogMain .comment .commentArticle {
-  width: 89%;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.blog .blogFlex .blogMain .comment .commentArticle h2 {
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  color: #4C0341;
+  font-size: 5.2rem;
+}
+
+.blog .blogFlex .blogMain .comment .commentArticle p:first-of-type {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
 
 .blog .blogFlex .blogMain .comment .commentPhoto {
-  width: 75%;
   position: relative;
-  right: -25%;
-  top: -150px;
+  width: 105%;
+  right: -10.5%;
+  top: -160px;
+  -webkit-box-shadow: -80px 80px #FE6F19;
+          box-shadow: -80px 80px #FE6F19;
 }
