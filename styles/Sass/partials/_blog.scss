@@ -1,0 +1,27 @@
+.blog {
+    background: $backgroundColor;
+
+    .blogFlex {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .blogMain {
+            flex-basis: 120%;
+
+            .comment {
+                background: white;
+
+            .commentArticle {
+                width: 89%;
+            }
+
+            .commentPhoto {
+                width: 75%;
+                position: relative;
+                right: -25%;
+                top: -150px;
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+// UNDER THE SEA
+.sea {
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 12%;
+
+    h2 {
+        font-family: $primaryFont;
+        font-size: 5.2rem;
+        text-transform: uppercase;
+        color: $textColor;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    span {
+        font-size: 2rem;
+        background: $textColor;
+        padding: 12px 16px;
+        text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+// NEW OPTIONS
+.bgColor {
+    background: $backgroundColor;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .newArticle {
+        width: 50%;
+        padding: 4%;   
+    }
+
+    .newPhoto {
+        position: relative;
+        left: -9.5%;
+        top: -61px;
+        box-shadow: 60px 55px $borderColor;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+        font-family: $primaryFont;
+        text-transform: uppercase;
+    }
+    
+    span {
+        font-size: 2rem;
+        background: $accentColor;
+        padding: 12px 16px;
+        text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.option {
+    display: flex;
+    align-items: center;
+
+    .optionArticle {
+        width: 50%;
+        padding: 4%;   
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1;
+    }
+
+    .optionPhoto {
+        position: relative;
+        right: -9.5%;
+        // top: -61px;
+        box-shadow: -60px 55px $borderColor;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+        font-family: $primaryFont;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    p {
+        text-align: right;
+    }
+    
+    span {
+        font-size: 2rem;
+        background: $accentColor;
+        padding: 12px 16px;
+        text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+// ABOUT
+.about {
+    background: $backgroundColor;
+    padding-top: 10%;
+
+    .aboutArticle {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 6%;
+
+        p {
+            padding: 2% 13%;
+        }
+
+        .location, .comunity, .blog, .contact {
+            display: flex;
+            padding-top: 5%;
+
+            i {
+                font-size: 5.2rem;
+                color: $textColor;
+                width: 75px;
+            }
+        }
+        
+    }
+
+    div {
+        flex-basis: 50%;
+    }
+
+    a {
+        color: black;
+        font-size: 5.2rem;
+        font-family: $primaryFont;
+    }
+}
+
+// POPULAR THIS MONTH
+.popular {
+    .popularMaster {
+    display: flex;
+    padding: 5% 1%;
+    justify-content: space-between;
+
+        .popularPhoto {
+            position: relative;
+            top: -40px;
+            left: -14px;
+            box-shadow: 40px 40px $borderColor;
+        }
+
+        .popularArticle {
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 5%;
+
+            h2 {
+                font-size: 5.2rem;
+                font-family: $primaryFont;
+                color: $textColor;
+            }
+
+            span {
+            font-size: 2rem;
+            background: $accentColor;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            width: 195px;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .popularBleed {
+        background: $backgroundColor;
+
+        .popularGallery {
+            display: flex;
+
+            figure {
+                padding: 5% 0;
+            }
+
+            figure:nth-of-type(2) {
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+        }
+    }    
+}

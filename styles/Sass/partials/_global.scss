@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+    padding: 5% 0;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.button {
+    background: $textColor;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid red;
+}
