@@ -111,3 +111,54 @@
         }
     }
 }
+
+.headerContact {
+    background: url(../shoeAssets/contact-image.jpg);
+    background-size: cover;
+    height: 75vh;
+
+    h1 {
+        font-size: 8rem;
+        font-family: $primaryFont;
+        line-height: 92px;
+        color: $textColor;
+        text-align: center;
+        padding-top: 12%;
+        text-transform: uppercase;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .navigation {
+        font-family: $secondaryFont;
+        font-size: 2rem;
+        width: 40%;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: $navText;
+            }
+        }
+    }
+
+    .logo {
+        width: 5%;
+        font-family: $primaryFont;
+        line-height: 36px;
+        font-size: 3.58rem;
+        margin: 0;
+        color: $navText;
+        
+        a {
+            color: $navText;
+        }
+    }
+}

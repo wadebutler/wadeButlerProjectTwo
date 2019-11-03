@@ -1,0 +1,79 @@
+main {
+    background: $backgroundColor;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+
+        .contactInfo {
+            padding: 4%;
+
+            .social {
+                display: flex;
+                font-size: 3rem;
+                color: $textColor;
+                
+                li {
+                    padding-right: 6%;
+                    // padding-bottom: 5%;
+                }
+            }
+
+            h2 {
+                color: $textColor;
+                font-size: 4.2rem;
+                font-family: $primaryFont;
+                padding: 8% 0;
+            }
+
+            .info {
+                
+                padding: 2% 0;
+                font-size: 2rem;
+            }
+        }
+
+        .form {
+            flex-basis: 70%;
+            position: relative;
+            right: -4.5%;
+            top: -120px;
+            box-shadow: -50px 50px $borderColor;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
+                background: white;
+                
+    
+
+                input {
+                    background: white;
+                    border: $backgroundColor;
+                    border-bottom: 2px solid $borderColor;
+                    width: 45%;
+                    margin: 2%;
+                    margin-left: 2%;
+                    font-size: 2rem;
+                }
+
+                textarea {
+                    background: white;
+                    border: 2px solid $borderColor;
+                    margin: 2%;
+                    font-size: 2rem;
+                }
+
+                button {
+                    margin: 2%;
+                    background: $accentColor;
+                    color: white;
+                    border: $accentColor;
+                    font-size: 2rem;
+                    padding: 2%;
+                }
+            }
+        }
+    }
+}
