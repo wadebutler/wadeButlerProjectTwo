@@ -75,7 +75,7 @@
                         </div>
 
                         <div>
-                            <p>Tuesday November 21st, 2019 by Jeremy</p>
+                            <h4>Tuesday November 21st, 2019 by Jeremy</h4>
                             
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam pariatur ab, quis impedit eligendi,
                                 laborum tempora optio atque ex nisi distinctio asperiores enim. Vel nesciunt sint mollitia quis
@@ -90,10 +90,11 @@
                         </div>
             
                         <div>
-                            <p>Wednesday November 10th, 2019 by Julia</p>
+                            <h4>Wednesday November 10th, 2019 by Julia</h4>
                             
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nemo consequatur, eos eveniet repellat
-                                placeat.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam pariatur ab, quis impedit eligendi,
+                                laborum tempora optio atque ex nisi distinctio asperiores enim. Vel nesciunt sint mollitia quis
+                                repellat!
                             </p>
                         </div>
                     </blockquote>
@@ -101,16 +102,18 @@
             
                 <section>
                     <form action="">
-                        <label for="name">Name</label>
-                        <input name="comment" id="name" type="text" placeholder="Name">
+                        <div>
+                            <label class="visually-hidden" for="name">Name</label>
+                            <input name="comment" id="name" type="text" placeholder="Name">
+                            
+                            <label class="visually-hidden" for="email">Email</label>
+                            <input name="comment" id="email" type="email" placeholder="Email">
+                        </div>
             
-                        <label for="email">Email</label>
-                        <input name="comment" id="email" type="email" placeholder="Email">
-            
-                        <label for="comment">Comment</label>
+                        <label class="visually-hidden" for="comment">Comment</label>
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment here..."></textarea>
             
-                        <label for="submit">Post Comment</label>
+                        <label class="visually-hidden" for="submit">Post Comment</label>
                         <button name="comment" id="submit" type="submit">Post Comment</button>
                     </form>
                 </section>

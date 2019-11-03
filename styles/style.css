@@ -223,6 +223,16 @@ img {
   border: 3px solid red;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
 .headerMain {
   background: url(../shoeAssets/header-image.jpg);
   background-size: cover;
@@ -677,10 +687,37 @@ footer h4 {
       flex-basis: 150%;
 }
 
+.blog .blogFlex .blogMain .commentSection h2 {
+  font-size: 4.2rem;
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  color: #4C0341;
+  padding-top: 8%;
+}
+
 .blog .blogFlex .blogMain .commentSection blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 5%;
+}
+
+.blog .blogFlex .blogMain .commentSection blockquote h4 {
+  color: black;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  padding-left: 5%;
+}
+
+.blog .blogFlex .blogMain .commentSection blockquote p {
+  padding: 4%;
+  padding-left: 5%;
+}
+
+.blog .blogFlex .blogMain .commentSection blockquote .personPhoto {
+  width: 40%;
 }
 
 .blog .blogFlex .blogMain .comment {
@@ -712,4 +749,41 @@ footer h4 {
   top: -160px;
   -webkit-box-shadow: -80px 80px #FE6F19;
           box-shadow: -80px 80px #FE6F19;
+}
+
+.blog .blogFlex .blogMain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+}
+
+.blog .blogFlex .blogMain form input {
+  background: #FAE5FF;
+  border: #FAE5FF;
+  border-bottom: 2px solid #FE6F19;
+  width: 45%;
+  margin: 2%;
+  margin-left: 2%;
+  font-size: 2rem;
+}
+
+.blog .blogFlex .blogMain form textarea {
+  background: #FAE5FF;
+  border: 2px solid #FE6F19;
+  margin: 2%;
+  font-size: 2rem;
+}
+
+.blog .blogFlex .blogMain form button {
+  margin: 2%;
+  background: #4C0341;
+  color: white;
+  border: #4C0341;
+  font-size: 2rem;
+  padding: 2%;
 }

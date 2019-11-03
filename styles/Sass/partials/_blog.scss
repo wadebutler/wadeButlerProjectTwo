@@ -54,9 +54,36 @@
 
             .commentSection {
 
+                h2 {
+                    font-size: 4.2rem;
+                    font-family: $primaryFont;
+                    text-transform: uppercase;
+                    color: $textColor;
+                    padding-top: 8%;
+                }
+
                 blockquote {
                     display: flex;
+                    margin: 0;
+                    padding: 5%;
+
+                    h4 {
+                        color: black;
+                        font-size: 2rem;
+                        padding: 0;
+                        margin: 0;
+                        padding-left: 5%;
+                        
+                    }
+
+                    p {
+                        padding: 4%;
+                        padding-left: 5%;
+                    }
                     
+                    .personPhoto {
+                        width: 40%;
+                    }
                 }
             }
 
@@ -87,6 +114,38 @@
                     right: -10.5%;
                     top: -160px;
                     box-shadow: -80px 80px $borderColor;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
+
+                input {
+                    background: $backgroundColor;
+                    border: $backgroundColor;
+                    border-bottom: 2px solid $borderColor;
+                    width: 45%;
+                    margin: 2%;
+                    margin-left: 2%;
+                    font-size: 2rem;
+                }
+
+                textarea {
+                    background: $backgroundColor;
+                    border: 2px solid $borderColor;
+                    margin: 2%;
+                    font-size: 2rem;
+                }
+
+                button {
+                    margin: 2%;
+                    background: $textColor;
+                    color: white;
+                    border: $textColor;
+                    font-size: 2rem;
+                    padding: 2%;
                 }
             }
         }
