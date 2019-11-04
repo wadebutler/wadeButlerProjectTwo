@@ -18,24 +18,20 @@
     }
 
     span {
-        font-size: 2rem;
-        background: $textColor;
-        padding: 12px 16px;
-        text-transform: uppercase;
-        border: 2px solid $textColor;
-        transition: 0.3s;
-
+        
         a {
+            font-size: 2rem;
+            background: $textColor;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            border: 2px solid $textColor;
             color: white;
             transition: 0.3s;
         }
-    }
 
-    span:hover {
-        border: 2px solid black;
-
-        a {
+        a:hover, a:focus {
             color: black;
+            border: 2px solid black;
         }
     }
 }
@@ -69,24 +65,20 @@
     }
     
     span {
-        font-size: 2rem;
-        background: $accentColor;
-        padding: 12px 16px;
-        text-transform: uppercase;
-        border: 2px solid $accentColor;
-        transition: 0.3s;
 
         a {
+            font-size: 2rem;
+            background: $accentColor;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            border: 2px solid $accentColor;
             color: white;
             transition: 0.3s;
         }
-    }
 
-    span:hover {
-        border: 2px solid black;
-
-        a {
+        a:hover, a:focus {
             color: black;
+            border: 2px solid black;
         }
     }
 }
@@ -107,7 +99,6 @@
     .optionPhoto {
         position: relative;
         right: -9.5%;
-        // top: -61px;
         box-shadow: -60px 55px $borderColor;
     }
 
@@ -123,23 +114,19 @@
     }
     
     span {
-        font-size: 2rem;
-        background: $accentColor;
-        padding: 12px 16px;
-        text-transform: uppercase;
-        border: 2px solid $accentColor;
-        transition: 0.3s;
 
         a {
+            font-size: 2rem;
+            background: $accentColor;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            border: 2px solid $accentColor;
             color: white;
             transition: 0.3s;
         }
-    }
 
-    span:hover {
-        border: 2px solid black;
-
-        a {
+        a:hover, a:focus {
+            border: 2px solid black;
             color: black;
         }
     }
@@ -170,16 +157,15 @@
                 color: $textColor;
                 width: 75px;
                 transition: 0.3s;
-                
                 border-bottom: 2px solid $backgroundColor;
             }
 
-            h3 {
+            h3 a {
                 border-bottom: 2px solid $backgroundColor;
                 transition: 0.3s;
             }
 
-            h3:hover {
+            a:hover, a:focus {
                 border-bottom: 2px solid $textColor;
             }
         }
@@ -225,24 +211,20 @@
             }
 
             span {
-            font-size: 2rem;
-            background: $accentColor;
-            padding: 12px 16px;
-            text-transform: uppercase;
-            width: 197px;
-            border: 2px solid $accentColor;
-            transition: 0.3s;
 
                 a {
+                    font-size: 2rem;
+                    background: $accentColor;
+                    padding: 12px 16px;
+                    text-transform: uppercase;
+                    width: 197px;
+                    border: 2px solid $accentColor;
                     color: white;
                     transition: 0.3s;
                 }
-            }
 
-            span:hover {
-                border: 2px solid black;
-
-                a {
+                a:hover, a:focus {
+                    border: 2px solid black;
                     color: black;
                 }
             }

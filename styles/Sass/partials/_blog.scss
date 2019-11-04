@@ -149,7 +149,7 @@
                     transition: 0.3s;
                 }
 
-                button:hover {
+                button:hover, button:focus {
                     color: black;
                     border: 3px solid black;
                 }

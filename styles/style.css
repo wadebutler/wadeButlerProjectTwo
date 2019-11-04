@@ -292,23 +292,13 @@ img {
       justify-content: space-around;
 }
 
-.headerMain .navigation ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .headerMain .navigation ul a {
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.headerMain .navigation ul li:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerMain .navigation ul li:hover a {
+.headerMain .navigation ul a:hover, .headerMain .navigation ul a:focus {
   color: white;
 }
 
@@ -329,12 +319,7 @@ img {
   transition: 0.3s;
 }
 
-.headerMain .logo:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerMain .logo:hover a {
+.headerMain .logo a:hover, .headerMain .logo a:focus {
   color: white;
 }
 
@@ -381,23 +366,13 @@ img {
       justify-content: space-around;
 }
 
-.headerBlog .navigation ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .headerBlog .navigation ul a {
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.headerBlog .navigation ul li:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerBlog .navigation ul li:hover a {
+.headerBlog .navigation ul a:hover, .headerBlog .navigation ul a:focus {
   color: white;
 }
 
@@ -418,12 +393,7 @@ img {
   transition: 0.3s;
 }
 
-.headerBlog .logo:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerBlog .logo:hover a {
+.headerBlog .logo a:hover, .headerBlog .logo a:focus {
   color: white;
 }
 
@@ -470,23 +440,13 @@ img {
       justify-content: space-around;
 }
 
-.headerContact .navigation ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .headerContact .navigation ul a {
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.headerContact .navigation ul li:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerContact .navigation ul li:hover a {
+.headerContact .navigation ul a:hover, .headerContact .navigation ul a:focus {
   color: white;
 }
 
@@ -507,12 +467,7 @@ img {
   transition: 0.3s;
 }
 
-.headerContact .logo:hover {
-  -webkit-transform: scale(1.2) rotate(15deg);
-          transform: scale(1.2) rotate(15deg);
-}
-
-.headerContact .logo:hover a {
+.headerContact .logo a:hover, .headerContact .logo a:focus {
   color: white;
 }
 
@@ -548,28 +503,20 @@ footer h4 {
   padding: 5%;
 }
 
-.sea span {
+.sea span a {
   font-size: 2rem;
   background: #4C0341;
   padding: 12px 16px;
   text-transform: uppercase;
   border: 2px solid #4C0341;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.sea span a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.sea span:hover {
-  border: 2px solid black;
-}
-
-.sea span:hover a {
+.sea span a:hover, .sea span a:focus {
   color: black;
+  border: 2px solid black;
 }
 
 .bgColor {
@@ -607,28 +554,20 @@ footer h4 {
   text-transform: uppercase;
 }
 
-.new span {
+.new span a {
   font-size: 2rem;
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
   border: 2px solid #882C07;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.new span a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.new span:hover {
-  border: 2px solid black;
-}
-
-.new span:hover a {
+.new span a:hover, .new span a:focus {
   color: black;
+  border: 2px solid black;
 }
 
 .option {
@@ -674,27 +613,19 @@ footer h4 {
   text-align: right;
 }
 
-.option span {
+.option span a {
   font-size: 2rem;
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
   border: 2px solid #882C07;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.option span a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.option span:hover {
+.option span a:hover, .option span a:focus {
   border: 2px solid black;
-}
-
-.option span:hover a {
   color: black;
 }
 
@@ -732,13 +663,13 @@ footer h4 {
   border-bottom: 2px solid #FAE5FF;
 }
 
-.about .aboutArticle .location h3, .about .aboutArticle .comunity h3, .about .aboutArticle .blog h3, .about .aboutArticle .contact h3 {
+.about .aboutArticle .location h3 a, .about .aboutArticle .comunity h3 a, .about .aboutArticle .blog h3 a, .about .aboutArticle .contact h3 a {
   border-bottom: 2px solid #FAE5FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.about .aboutArticle .location h3:hover, .about .aboutArticle .comunity h3:hover, .about .aboutArticle .blog h3:hover, .about .aboutArticle .contact h3:hover {
+.about .aboutArticle .location a:hover, .about .aboutArticle .location a:focus, .about .aboutArticle .comunity a:hover, .about .aboutArticle .comunity a:focus, .about .aboutArticle .blog a:hover, .about .aboutArticle .blog a:focus, .about .aboutArticle .contact a:hover, .about .aboutArticle .contact a:focus {
   border-bottom: 2px solid #4C0341;
 }
 
@@ -793,28 +724,20 @@ footer h4 {
   color: #4C0341;
 }
 
-.popular .popularMaster .popularArticle span {
+.popular .popularMaster .popularArticle span a {
   font-size: 2rem;
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
   width: 197px;
   border: 2px solid #882C07;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.popular .popularMaster .popularArticle span a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.popular .popularMaster .popularArticle span:hover {
+.popular .popularMaster .popularArticle span a:hover, .popular .popularMaster .popularArticle span a:focus {
   border: 2px solid black;
-}
-
-.popular .popularMaster .popularArticle span:hover a {
   color: black;
 }
 
@@ -1008,7 +931,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.blog .blogFlex .blogMain form button:hover {
+.blog .blogFlex .blogMain form button:hover, .blog .blogFlex .blogMain form button:focus {
   color: black;
   border: 3px solid black;
 }
@@ -1034,22 +957,21 @@ main .contactWrapper .contactInfo .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3rem;
-  color: #4C0341;
 }
 
 main .contactWrapper .contactInfo .social li {
   padding-right: 6%;
 }
 
-main .contactWrapper .contactInfo .social li i {
+main .contactWrapper .contactInfo .social li a {
+  font-size: 3rem;
+  color: #4C0341;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-main .contactWrapper .contactInfo .social li i:hover {
-  -webkit-transform: rotate(15deg) scale(1.2);
-          transform: rotate(15deg) scale(1.2);
+main .contactWrapper .contactInfo .social li a:hover, main .contactWrapper .contactInfo .social li a:focus {
+  color: black;
 }
 
 main .contactWrapper .contactInfo h2 {
@@ -1114,26 +1036,26 @@ main .contactWrapper .form form button {
   transition: 0.3s;
 }
 
-main .contactWrapper .form form button:hover {
+main .contactWrapper .form form button:hover, main .contactWrapper .form form button:focus {
   border: 3px solid black;
   color: black;
 }
 
-.headerMain span a {
+.headerMain h5 {
+  margin: 0;
+}
+
+.headerMain h5 a {
   text-decoration: none;
   position: fixed;
-  right: 500px;
+  right: -45%;
   top: 0;
-  color: white;
   font-size: 2rem;
   background: #4C0341;
   padding: 1%;
+  color: white;
 }
 
-.headerMain span a :focus {
-  color: blue;
-}
-
-.headerMain span a :hover {
-  color: blue;
+.headerMain h5 a:focus, .headerMain h5 a:hover {
+  right: 45%;
 }

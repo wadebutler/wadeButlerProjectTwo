@@ -41,24 +41,15 @@
             display: flex;
             justify-content: space-around;
 
-            li {
-                transition: 0.3s;
-            }
-
             a {
                 color: $navText;
                 transition: 0.3s;
             }
-
-            li:hover {
-                transform: scale(1.2) rotate(15deg);
                 
-                a {
-                    color: white;
-                }
+            a:hover, a:focus {
+                color: white;
             }
-        }
-        
+        }        
     }
 
     .logo {
@@ -74,12 +65,8 @@
             color: $navText;
             transition: 0.3s;
         }
-    }
 
-    .logo:hover {
-        transform: scale(1.2) rotate(15deg);
-
-        a {
+        a:hover, a:focus {
             color: white;
         }
     }
@@ -116,21 +103,13 @@
             display: flex;
             justify-content: space-around;
 
-            li {
-                transition: 0.3s;
-            }
-
             a {
                 color: $navText;
                 transition: 0.3s;
             }
-
-            li:hover {
-                transform: scale(1.2) rotate(15deg);
                 
-                a {
-                    color: white;
-                }
+            a:hover, a:focus {
+                color: white;
             }
         }
     }
@@ -148,12 +127,8 @@
             color: $navText;
             transition: 0.3s;
         }
-    }
 
-    .logo:hover {
-        transform: scale(1.2) rotate(15deg);
-
-        a {
+        a:hover, a:focus {
             color: white;
         }
     }
@@ -190,21 +165,13 @@
             display: flex;
             justify-content: space-around;
 
-            li {
-                transition: 0.3s;
-            }
-
             a {
                 color: $navText;
                 transition: 0.3s;
             }
-
-            li:hover {
-                transform: scale(1.2) rotate(15deg);
                 
-                a {
-                    color: white;
-                }
+            a:hover, a:focus {
+                color: white;
             }
         }
     }
@@ -222,12 +189,8 @@
             color: $navText;
             transition: 0.3s;
         }
-    }
 
-    .logo:hover {
-        transform: scale(1.2) rotate(15deg);
-
-        a {
+        a:hover, a:focus {
             color: white;
         }
     }

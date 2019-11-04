@@ -1,20 +1,18 @@
-.headerMain span a {
-    text-decoration: none;
-    position: fixed;
-    right: 500px;
-    top: 0;
-    color: white;
-    font-size: 2rem;
-    background: $textColor;
-    padding: 1%;
+.headerMain h5 {
+    margin: 0;
 
-    :focus {
-        // right: 600px;
-        color: blue;
+    a {
+        text-decoration: none;
+        position: fixed;
+        right: -45%;
+        top: 0;
+        font-size: 2rem;
+        background: $textColor;
+        padding: 1%;
+        color: white;
     }
 
-    :hover {
-        // right: 600px;
-        color: blue;
+    a:focus, a:hover {
+        right: 45%;
     }
 }
