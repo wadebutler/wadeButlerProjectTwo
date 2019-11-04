@@ -220,7 +220,6 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 .visually-hidden {
@@ -293,8 +292,24 @@ img {
       justify-content: space-around;
 }
 
+.headerMain .navigation ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .headerMain .navigation ul a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerMain .navigation ul li:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerMain .navigation ul li:hover a {
+  color: white;
 }
 
 .headerMain .logo {
@@ -304,10 +319,23 @@ img {
   font-size: 3.58rem;
   margin: 0;
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .headerMain .logo a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerMain .logo:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerMain .logo:hover a {
+  color: white;
 }
 
 .headerBlog {
@@ -353,8 +381,24 @@ img {
       justify-content: space-around;
 }
 
+.headerBlog .navigation ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .headerBlog .navigation ul a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerBlog .navigation ul li:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerBlog .navigation ul li:hover a {
+  color: white;
 }
 
 .headerBlog .logo {
@@ -364,10 +408,23 @@ img {
   font-size: 3.58rem;
   margin: 0;
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .headerBlog .logo a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerBlog .logo:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerBlog .logo:hover a {
+  color: white;
 }
 
 .headerContact {
@@ -413,8 +470,24 @@ img {
       justify-content: space-around;
 }
 
+.headerContact .navigation ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .headerContact .navigation ul a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerContact .navigation ul li:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerContact .navigation ul li:hover a {
+  color: white;
 }
 
 .headerContact .logo {
@@ -424,10 +497,23 @@ img {
   font-size: 3.58rem;
   margin: 0;
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .headerContact .logo a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerContact .logo:hover {
+  -webkit-transform: scale(1.2) rotate(15deg);
+          transform: scale(1.2) rotate(15deg);
+}
+
+.headerContact .logo:hover a {
+  color: white;
 }
 
 footer {
@@ -467,10 +553,23 @@ footer h4 {
   background: #4C0341;
   padding: 12px 16px;
   text-transform: uppercase;
+  border: 2px solid #4C0341;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sea span a {
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sea span:hover {
+  border: 2px solid black;
+}
+
+.sea span:hover a {
+  color: black;
 }
 
 .bgColor {
@@ -513,10 +612,23 @@ footer h4 {
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
+  border: 2px solid #882C07;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .new span a {
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.new span:hover {
+  border: 2px solid black;
+}
+
+.new span:hover a {
+  color: black;
 }
 
 .option {
@@ -567,10 +679,23 @@ footer h4 {
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
+  border: 2px solid #882C07;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .option span a {
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.option span:hover {
+  border: 2px solid black;
+}
+
+.option span:hover a {
+  color: black;
 }
 
 .about {
@@ -602,6 +727,24 @@ footer h4 {
   font-size: 5.2rem;
   color: #4C0341;
   width: 75px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 9%;
+  border-bottom: 2px solid #FAE5FF;
+}
+
+.about .aboutArticle .location i:hover, .about .aboutArticle .comunity i:hover, .about .aboutArticle .blog i:hover, .about .aboutArticle .contact i:hover {
+  border-bottom: 2px solid #4C0341;
+}
+
+.about .aboutArticle .location h3, .about .aboutArticle .comunity h3, .about .aboutArticle .blog h3, .about .aboutArticle .contact h3 {
+  border-bottom: 2px solid #FAE5FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about .aboutArticle .location h3:hover, .about .aboutArticle .comunity h3:hover, .about .aboutArticle .blog h3:hover, .about .aboutArticle .contact h3:hover {
+  border-bottom: 2px solid black;
 }
 
 .about div {
@@ -660,11 +803,24 @@ footer h4 {
   background: #882C07;
   padding: 12px 16px;
   text-transform: uppercase;
-  width: 195px;
+  width: 197px;
+  border: 2px solid #882C07;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .popular .popularMaster .popularArticle span a {
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popular .popularMaster .popularArticle span:hover {
+  border: 2px solid black;
+}
+
+.popular .popularMaster .popularArticle span:hover a {
+  color: black;
 }
 
 .popular .popularBleed {
@@ -679,11 +835,18 @@ footer h4 {
 
 .popular .popularBleed .popularGallery figure {
   padding: 5% 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .popular .popularBleed .popularGallery figure:nth-of-type(2) {
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.popular .popularBleed .popularGallery figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blog {
@@ -843,16 +1006,23 @@ footer h4 {
   margin: 2%;
   background: #4C0341;
   color: white;
-  border: #4C0341;
+  border: 3px solid #4C0341;
   font-size: 2rem;
   padding: 2%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog .blogFlex .blogMain form button:hover {
+  color: black;
+  border: 3px solid black;
 }
 
 main {
   background: #FAE5FF;
 }
 
-main div {
+main .contactWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,11 +1031,11 @@ main div {
           justify-content: space-between;
 }
 
-main div .contactInfo {
+main .contactWrapper .contactInfo {
   padding: 4%;
 }
 
-main div .contactInfo .social {
+main .contactWrapper .contactInfo .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,23 +1043,33 @@ main div .contactInfo .social {
   color: #4C0341;
 }
 
-main div .contactInfo .social li {
+main .contactWrapper .contactInfo .social li {
   padding-right: 6%;
 }
 
-main div .contactInfo h2 {
+main .contactWrapper .contactInfo .social li i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .contactWrapper .contactInfo .social li i:hover {
+  -webkit-transform: rotate(15deg) scale(1.2);
+          transform: rotate(15deg) scale(1.2);
+}
+
+main .contactWrapper .contactInfo h2 {
   color: #4C0341;
   font-size: 4.2rem;
   font-family: "Pompiere", cursive;
   padding: 8% 0;
 }
 
-main div .contactInfo .info {
+main .contactWrapper .contactInfo .info {
   padding: 2% 0;
   font-size: 2rem;
 }
 
-main div .form {
+main .contactWrapper .form {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   position: relative;
@@ -899,7 +1079,7 @@ main div .form {
           box-shadow: -50px 50px #FE6F19;
 }
 
-main div .form form {
+main .contactWrapper .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,7 +1091,7 @@ main div .form form {
   background: white;
 }
 
-main div .form form input {
+main .contactWrapper .form form input {
   background: white;
   border: #FAE5FF;
   border-bottom: 2px solid #FE6F19;
@@ -921,18 +1101,25 @@ main div .form form input {
   font-size: 2rem;
 }
 
-main div .form form textarea {
+main .contactWrapper .form form textarea {
   background: white;
   border: 2px solid #FE6F19;
   margin: 2%;
   font-size: 2rem;
 }
 
-main div .form form button {
+main .contactWrapper .form form button {
   margin: 2%;
   background: #882C07;
   color: white;
-  border: #882C07;
+  border: 3px solid #882C07;
   font-size: 2rem;
   padding: 2%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .contactWrapper .form form button:hover {
+  border: 3px solid black;
+  color: black;
 }

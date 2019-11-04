@@ -143,10 +143,17 @@
                     margin: 2%;
                     background: $textColor;
                     color: white;
-                    border: $textColor;
+                    border: 3px solid $textColor;
                     font-size: 2rem;
                     padding: 2%;
+                    transition: 0.3s;
                 }
+
+                button:hover {
+                    color: black;
+                    border: 3px solid black;
+                }
+
             }
         }
     }
