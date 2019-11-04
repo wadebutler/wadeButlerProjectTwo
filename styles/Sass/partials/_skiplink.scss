@@ -1,7 +1,7 @@
-.headerMain h5 {
+header h5 {
     margin: 0;
 
-    a {
+    .mainSkip {
         text-decoration: none;
         position: fixed;
         right: -45%;
@@ -12,7 +12,37 @@
         color: white;
     }
 
-    a:focus, a:hover {
+    .mainSkip:focus {
+        right: 45%;
+    }
+
+    .blogSkip {
+        text-decoration: none;
+        position: fixed;
+        right: -47%;
+        top: 0;
+        font-size: 2rem;
+        background: $textColor;
+        padding: 1%;
+        color: white;
+    }
+
+    .blogSkip:focus {
+        right: 47%;
+    }
+
+    .contactSkip {
+        text-decoration: none;
+        position: fixed;
+        right: -45%;
+        top: 0;
+        font-size: 2rem;
+        background: $textColor;
+        padding: 1%;
+        color: white;
+    }
+
+    .contactSkip:focus {
         right: 45%;
     }
 }

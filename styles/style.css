@@ -1041,11 +1041,11 @@ main .contactWrapper .form form button:hover, main .contactWrapper .form form bu
   color: black;
 }
 
-.headerMain h5 {
+header h5 {
   margin: 0;
 }
 
-.headerMain h5 a {
+header h5 .mainSkip {
   text-decoration: none;
   position: fixed;
   right: -45%;
@@ -1056,6 +1056,36 @@ main .contactWrapper .form form button:hover, main .contactWrapper .form form bu
   color: white;
 }
 
-.headerMain h5 a:focus, .headerMain h5 a:hover {
+header h5 .mainSkip:focus {
+  right: 45%;
+}
+
+header h5 .blogSkip {
+  text-decoration: none;
+  position: fixed;
+  right: -47%;
+  top: 0;
+  font-size: 2rem;
+  background: #4C0341;
+  padding: 1%;
+  color: white;
+}
+
+header h5 .blogSkip:focus {
+  right: 47%;
+}
+
+header h5 .contactSkip {
+  text-decoration: none;
+  position: fixed;
+  right: -45%;
+  top: 0;
+  font-size: 2rem;
+  background: #4C0341;
+  padding: 1%;
+  color: white;
+}
+
+header h5 .contactSkip:focus {
   right: 45%;
 }
