@@ -170,12 +170,8 @@
                 color: $textColor;
                 width: 75px;
                 transition: 0.3s;
-                padding-bottom: 9%;
+                
                 border-bottom: 2px solid $backgroundColor;
-            }
-
-            i:hover {
-                border-bottom: 2px solid $textColor;
             }
 
             h3 {
@@ -184,7 +180,7 @@
             }
 
             h3:hover {
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid $textColor;
             }
         }
         

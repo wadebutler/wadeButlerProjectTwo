@@ -729,12 +729,7 @@ footer h4 {
   width: 75px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-bottom: 9%;
   border-bottom: 2px solid #FAE5FF;
-}
-
-.about .aboutArticle .location i:hover, .about .aboutArticle .comunity i:hover, .about .aboutArticle .blog i:hover, .about .aboutArticle .contact i:hover {
-  border-bottom: 2px solid #4C0341;
 }
 
 .about .aboutArticle .location h3, .about .aboutArticle .comunity h3, .about .aboutArticle .blog h3, .about .aboutArticle .contact h3 {
@@ -744,7 +739,7 @@ footer h4 {
 }
 
 .about .aboutArticle .location h3:hover, .about .aboutArticle .comunity h3:hover, .about .aboutArticle .blog h3:hover, .about .aboutArticle .contact h3:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #4C0341;
 }
 
 .about div {
@@ -1122,4 +1117,23 @@ main .contactWrapper .form form button {
 main .contactWrapper .form form button:hover {
   border: 3px solid black;
   color: black;
+}
+
+.headerMain span a {
+  text-decoration: none;
+  position: fixed;
+  right: 500px;
+  top: 0;
+  color: white;
+  font-size: 2rem;
+  background: #4C0341;
+  padding: 1%;
+}
+
+.headerMain span a :focus {
+  color: blue;
+}
+
+.headerMain span a :hover {
+  color: blue;
 }
