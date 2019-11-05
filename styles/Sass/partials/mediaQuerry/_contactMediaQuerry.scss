@@ -2,7 +2,11 @@
     main {
 
         .contactWrapper {
-            flex-direction: column-reverse;
+            flex-direction: column;
+            
+            .contactInfo {
+                margin-bottom: 15%;
+            }
 
             @media (max-width: 600px) {
                 .form {

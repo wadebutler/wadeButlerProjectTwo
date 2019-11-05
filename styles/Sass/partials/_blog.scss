@@ -1,13 +1,19 @@
 .blog {
-
     display: flex;
 
     aside {
         margin: 5%;
 
+        .asidePhoto {
+            position: absolute;
+            left: 0;
+            top: 80%;
+            width: 27%;
+        }
+
         .asideArticle {
             background: white;
-            padding: 0;
+            padding-top: 85%;
 
             h3 {
                 font-size: 2rem;
@@ -40,7 +46,7 @@
     .blogArticle {
         background: white;
         padding: 5%;
-        margin-top: -40%;
+        margin-top: -25%;
 
         h2 {
             font-size: 4.2rem;

@@ -406,6 +406,7 @@ img {
   position: fixed;
   top: 0;
   right: 10px;
+  z-index: 1;
 }
 
 .headerBlog .smallNav input[type="checkbox"] {
@@ -871,9 +872,16 @@ footer h4 {
   margin: 5%;
 }
 
+.blog aside .asidePhoto {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 27%;
+}
+
 .blog aside .asideArticle {
   background: white;
-  padding: 0;
+  padding-top: 85%;
 }
 
 .blog aside .asideArticle h3 {
@@ -906,7 +914,7 @@ footer h4 {
 .blog .blogArticle {
   background: white;
   padding: 5%;
-  margin-top: -40%;
+  margin-top: -25%;
 }
 
 .blog .blogArticle h2 {
@@ -1106,7 +1114,7 @@ header h5 .mainSkip {
 }
 
 header h5 .mainSkip:focus {
-  right: 640px;
+  right: 45%;
 }
 
 header h5 .blogSkip {
@@ -1121,7 +1129,7 @@ header h5 .blogSkip {
 }
 
 header h5 .blogSkip:focus {
-  right: 640px;
+  right: 45%;
 }
 
 header h5 .contactSkip {
@@ -1136,7 +1144,7 @@ header h5 .contactSkip {
 }
 
 header h5 .contactSkip:focus {
-  right: 640px;
+  right: 45%;
 }
 
 @media (max-width: 800px) {
@@ -1235,16 +1243,37 @@ header h5 .contactSkip:focus {
   }
 }
 
+@media (max-width: 1100px) {
+  .blog .blogArticle {
+    margin-top: -30%;
+  }
+}
+
+@media (max-width: 885px) {
+  .blog .blogArticle {
+    margin-top: -35%;
+  }
+}
+
 @media (max-width: 800px) {
   .blog aside {
     display: none;
   }
 }
 
-@media (max-width: 500px) {
-  .blog .blogPhoto {
+@media (max-width: 800px) {
+  .blog .blogMain .blogArticle {
+    margin-top: -35%;
+  }
+  .blog .blogMain .blogPhoto {
     -webkit-box-shadow: 0 0 #FE6F19;
             box-shadow: 0 0 #FE6F19;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog .blogPhoto {
+    display: none;
   }
   .blog .blogArticle {
     padding: 8%;
@@ -1265,9 +1294,12 @@ header h5 .contactSkip:focus {
 @media (max-width: 800px) {
   main .contactWrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .contactWrapper .contactInfo {
+    margin-bottom: 15%;
   }
 }
 
