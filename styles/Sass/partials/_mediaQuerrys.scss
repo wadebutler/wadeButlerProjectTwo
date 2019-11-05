@@ -1,0 +1,77 @@
+// TEXT MEDIA QUERRY 
+html {
+    @media (max-width: 1400px) {
+        font-size: 60%;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 50%;
+    }
+}
+
+// HEADER MEDIA QUERRY
+.headerMain {
+
+    @media (max-width: 1400px) {
+        .navigation {
+            display: none;
+        }
+
+        .smallNav {
+            display: block;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .landing {
+
+            .headerPhoto {
+                display: none;
+            }
+        }
+    }
+}
+
+// ABOUT MEDIA QUERRY
+@media (max-width: 600px) {
+    .aboutArticle {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+// POPULAR MEDIA QUERRY
+@media (max-width: 600px) {
+    .popular {
+
+        .popularBleed {
+
+            .popularGallery {
+                flex-direction: column;
+
+                figure {
+                    padding: 5%;
+                }
+
+                figure:nth-of-type(2) {
+                    padding: 5%;
+                }
+
+                figure:hover {
+                    transform: none;
+                }    
+            }
+        }
+    }
+}

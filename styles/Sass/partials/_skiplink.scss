@@ -4,7 +4,7 @@ header h5 {
     .mainSkip {
         text-decoration: none;
         position: fixed;
-        right: -45%;
+        right: -10000px;
         top: 0;
         font-size: 2rem;
         background: $textColor;
@@ -13,13 +13,13 @@ header h5 {
     }
 
     .mainSkip:focus {
-        right: 45%;
+        right: 640px;
     }
 
     .blogSkip {
         text-decoration: none;
         position: fixed;
-        right: -47%;
+        right: -10000px;
         top: 0;
         font-size: 2rem;
         background: $textColor;
@@ -28,13 +28,13 @@ header h5 {
     }
 
     .blogSkip:focus {
-        right: 47%;
+        right: 640px;
     }
 
     .contactSkip {
         text-decoration: none;
         position: fixed;
-        right: -45%;
+        right: -10000px;
         top: 0;
         font-size: 2rem;
         background: $textColor;
@@ -43,6 +43,6 @@ header h5 {
     }
 
     .contactSkip:focus {
-        right: 45%;
+        right: 640px;
     }
 }

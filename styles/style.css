@@ -181,6 +181,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 ul {
@@ -220,6 +222,7 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  border: 3px solid red;
 }
 
 .visually-hidden {
@@ -248,10 +251,9 @@ img {
   position: relative;
 }
 
-.headerMain .landing div {
-  width: 58%;
-  position: relative;
-  right: -9.7%;
+.headerMain .landing .headerPhoto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .headerMain .landing h2 {
@@ -262,7 +264,8 @@ img {
   color: #4C0341;
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
-  margin: 8% 0;
+  margin-top: 8%;
+  margin-left: 8%;
 }
 
 .headerMain .nav {
@@ -276,6 +279,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 1%;
+}
+
+.headerMain .smallNav {
+  display: none;
+  font-size: 4rem;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .headerMain .navigation {
@@ -520,7 +529,7 @@ footer h4 {
 }
 
 .bgColor {
-  background: #FAE5FF;
+  background: white;
 }
 
 .new {
@@ -597,7 +606,7 @@ footer h4 {
 
 .option .optionPhoto {
   position: relative;
-  right: -9.5%;
+  right: -112px;
   -webkit-box-shadow: -60px 55px #FE6F19;
           box-shadow: -60px 55px #FE6F19;
 }
@@ -640,36 +649,42 @@ footer h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 6%;
 }
 
-.about .aboutArticle p {
-  padding: 2% 13%;
-}
-
-.about .aboutArticle .location, .about .aboutArticle .comunity, .about .aboutArticle .blog, .about .aboutArticle .contact {
+.about .aboutArticle .locationIcon, .about .aboutArticle .comunityIcon, .about .aboutArticle .blogIcon, .about .aboutArticle .contactIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 5%;
 }
 
-.about .aboutArticle .location i, .about .aboutArticle .comunity i, .about .aboutArticle .blog i, .about .aboutArticle .contact i {
+.about .aboutArticle .locationIcon i, .about .aboutArticle .comunityIcon i, .about .aboutArticle .blogIcon i, .about .aboutArticle .contactIcon i {
   font-size: 5.2rem;
   color: #4C0341;
   width: 75px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border-bottom: 2px solid #FAE5FF;
-}
-
-.about .aboutArticle .location h3 a, .about .aboutArticle .comunity h3 a, .about .aboutArticle .blog h3 a, .about .aboutArticle .contact h3 a {
-  border-bottom: 2px solid #FAE5FF;
+  padding: 1%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.about .aboutArticle .location a:hover, .about .aboutArticle .location a:focus, .about .aboutArticle .comunity a:hover, .about .aboutArticle .comunity a:focus, .about .aboutArticle .blog a:hover, .about .aboutArticle .blog a:focus, .about .aboutArticle .contact a:hover, .about .aboutArticle .contact a:focus {
+.about .aboutArticle .locationIcon .location, .about .aboutArticle .locationIcon .comunity, .about .aboutArticle .locationIcon .blog, .about .aboutArticle .locationIcon .contact, .about .aboutArticle .comunityIcon .location, .about .aboutArticle .comunityIcon .comunity, .about .aboutArticle .comunityIcon .blog, .about .aboutArticle .comunityIcon .contact, .about .aboutArticle .blogIcon .location, .about .aboutArticle .blogIcon .comunity, .about .aboutArticle .blogIcon .blog, .about .aboutArticle .blogIcon .contact, .about .aboutArticle .contactIcon .location, .about .aboutArticle .contactIcon .comunity, .about .aboutArticle .contactIcon .blog, .about .aboutArticle .contactIcon .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.about .aboutArticle .locationIcon .location h3 a, .about .aboutArticle .locationIcon .comunity h3 a, .about .aboutArticle .locationIcon .blog h3 a, .about .aboutArticle .locationIcon .contact h3 a, .about .aboutArticle .comunityIcon .location h3 a, .about .aboutArticle .comunityIcon .comunity h3 a, .about .aboutArticle .comunityIcon .blog h3 a, .about .aboutArticle .comunityIcon .contact h3 a, .about .aboutArticle .blogIcon .location h3 a, .about .aboutArticle .blogIcon .comunity h3 a, .about .aboutArticle .blogIcon .blog h3 a, .about .aboutArticle .blogIcon .contact h3 a, .about .aboutArticle .contactIcon .location h3 a, .about .aboutArticle .contactIcon .comunity h3 a, .about .aboutArticle .contactIcon .blog h3 a, .about .aboutArticle .contactIcon .contact h3 a {
+  border-bottom: 2px solid #FAE5FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about .aboutArticle .locationIcon .location a:hover, .about .aboutArticle .locationIcon .location a:focus, .about .aboutArticle .locationIcon .comunity a:hover, .about .aboutArticle .locationIcon .comunity a:focus, .about .aboutArticle .locationIcon .blog a:hover, .about .aboutArticle .locationIcon .blog a:focus, .about .aboutArticle .locationIcon .contact a:hover, .about .aboutArticle .locationIcon .contact a:focus, .about .aboutArticle .comunityIcon .location a:hover, .about .aboutArticle .comunityIcon .location a:focus, .about .aboutArticle .comunityIcon .comunity a:hover, .about .aboutArticle .comunityIcon .comunity a:focus, .about .aboutArticle .comunityIcon .blog a:hover, .about .aboutArticle .comunityIcon .blog a:focus, .about .aboutArticle .comunityIcon .contact a:hover, .about .aboutArticle .comunityIcon .contact a:focus, .about .aboutArticle .blogIcon .location a:hover, .about .aboutArticle .blogIcon .location a:focus, .about .aboutArticle .blogIcon .comunity a:hover, .about .aboutArticle .blogIcon .comunity a:focus, .about .aboutArticle .blogIcon .blog a:hover, .about .aboutArticle .blogIcon .blog a:focus, .about .aboutArticle .blogIcon .contact a:hover, .about .aboutArticle .blogIcon .contact a:focus, .about .aboutArticle .contactIcon .location a:hover, .about .aboutArticle .contactIcon .location a:focus, .about .aboutArticle .contactIcon .comunity a:hover, .about .aboutArticle .contactIcon .comunity a:focus, .about .aboutArticle .contactIcon .blog a:hover, .about .aboutArticle .contactIcon .blog a:focus, .about .aboutArticle .contactIcon .contact a:hover, .about .aboutArticle .contactIcon .contact a:focus {
   border-bottom: 2px solid #4C0341;
 }
 
@@ -1048,7 +1063,7 @@ header h5 {
 header h5 .mainSkip {
   text-decoration: none;
   position: fixed;
-  right: -45%;
+  right: -10000px;
   top: 0;
   font-size: 2rem;
   background: #4C0341;
@@ -1057,13 +1072,13 @@ header h5 .mainSkip {
 }
 
 header h5 .mainSkip:focus {
-  right: 45%;
+  right: 640px;
 }
 
 header h5 .blogSkip {
   text-decoration: none;
   position: fixed;
-  right: -47%;
+  right: -10000px;
   top: 0;
   font-size: 2rem;
   background: #4C0341;
@@ -1072,13 +1087,13 @@ header h5 .blogSkip {
 }
 
 header h5 .blogSkip:focus {
-  right: 47%;
+  right: 640px;
 }
 
 header h5 .contactSkip {
   text-decoration: none;
   position: fixed;
-  right: -45%;
+  right: -10000px;
   top: 0;
   font-size: 2rem;
   background: #4C0341;
@@ -1087,5 +1102,73 @@ header h5 .contactSkip {
 }
 
 header h5 .contactSkip:focus {
-  right: 45%;
+  right: 640px;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .headerMain .navigation {
+    display: none;
+  }
+  .headerMain .smallNav {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerMain .nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .headerMain .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerMain .landing .headerPhoto {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutArticle {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular .popularBleed .popularGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popular .popularBleed .popularGallery figure {
+    padding: 5%;
+  }
+  .popular .popularBleed .popularGallery figure:nth-of-type(2) {
+    padding: 5%;
+  }
+  .popular .popularBleed .popularGallery figure:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }

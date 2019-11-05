@@ -8,10 +8,8 @@
         justify-content: space-between;
         position: relative;
 
-        div {
-            width: 58%;
-            position: relative;
-            right: -9.7%;
+        .headerPhoto {
+            flex-basis: 50%;
         }
 
         h2 {
@@ -21,7 +19,8 @@
             line-height: 64px;
             color: $textColor;
             flex-basis: 15%;
-            margin: 8% 0;
+            margin-top: 8%;
+            margin-left: 8%;
         }
     }
 
@@ -30,6 +29,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 1%;
+    }
+
+    .smallNav {
+        display: none;
+        font-size: 4rem;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
 
     .navigation {

@@ -38,7 +38,7 @@
 
 // NEW OPTIONS
 .bgColor {
-    background: $backgroundColor;
+    background: white;
 }
 
 .new {
@@ -98,7 +98,7 @@
 
     .optionPhoto {
         position: relative;
-        right: -9.5%;
+        right: -112px;
         box-shadow: -60px 55px $borderColor;
     }
 
@@ -140,36 +140,34 @@
     .aboutArticle {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 6%;
         
-
-        p {
-            padding: 2% 13%;
-        }
-
-        .location, .comunity, .blog, .contact {
+        
+        .locationIcon, .comunityIcon, .blogIcon, .contactIcon {
             display: flex;
-            padding-top: 5%;
-            
 
             i {
                 font-size: 5.2rem;
                 color: $textColor;
                 width: 75px;
-                transition: 0.3s;
-                border-bottom: 2px solid $backgroundColor;
-            }
-
-            h3 a {
-                border-bottom: 2px solid $backgroundColor;
+                padding: 1%;
                 transition: 0.3s;
             }
 
-            a:hover, a:focus {
-                border-bottom: 2px solid $textColor;
+            .location, .comunity, .blog, .contact {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+
+                h3 a {
+                    border-bottom: 2px solid $backgroundColor;
+                    transition: 0.3s;
+                }
+
+                a:hover, a:focus {
+                    border-bottom: 2px solid $textColor;
+                }
             }
         }
-        
     }
 
     div {
