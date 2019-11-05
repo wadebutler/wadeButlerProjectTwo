@@ -222,7 +222,11 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  border: 3px solid red;
+}
+
+.bigWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -283,7 +287,42 @@ img {
 .headerMain .smallNav {
   display: none;
   font-size: 4rem;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #4C0341;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+.headerMain .smallNav input[type="checkbox"] {
+  display: none;
+}
+
+.headerMain .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
+  display: block;
+}
+
+.headerMain .smallNav .smallNavMenu {
+  font-family: "Pompiere", cursive;
+  background: black;
+  position: absolute;
+  right: -10px;
+  top: 70px;
+  display: none;
+}
+
+.headerMain .smallNav .smallNavMenu li {
+  border-bottom: 2px solid white;
+  padding: 20px 20px 0 20px;
+}
+
+.headerMain .smallNav .smallNavMenu a {
+  color: #4C0341;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerMain .smallNav .smallNavMenu a:hover {
+  color: white;
 }
 
 .headerMain .navigation {
@@ -360,6 +399,47 @@ img {
   padding: 1%;
 }
 
+.headerBlog .smallNav {
+  display: none;
+  font-size: 4rem;
+  color: #4C0341;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+.headerBlog .smallNav input[type="checkbox"] {
+  display: none;
+}
+
+.headerBlog .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
+  display: block;
+}
+
+.headerBlog .smallNav .smallNavMenu {
+  font-family: "Pompiere", cursive;
+  background: black;
+  position: absolute;
+  right: -10px;
+  top: 70px;
+  display: none;
+}
+
+.headerBlog .smallNav .smallNavMenu li {
+  border-bottom: 2px solid white;
+  padding: 20px 20px 0 20px;
+}
+
+.headerBlog .smallNav .smallNavMenu a {
+  color: #4C0341;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerBlog .smallNav .smallNavMenu a:hover {
+  color: white;
+}
+
 .headerBlog .navigation {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
@@ -432,6 +512,47 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 1%;
+}
+
+.headerContact .smallNav {
+  display: none;
+  font-size: 4rem;
+  color: #4C0341;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+.headerContact .smallNav input[type="checkbox"] {
+  display: none;
+}
+
+.headerContact .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
+  display: block;
+}
+
+.headerContact .smallNav .smallNavMenu {
+  font-family: "Pompiere", cursive;
+  background: black;
+  position: absolute;
+  right: -10px;
+  top: 70px;
+  display: none;
+}
+
+.headerContact .smallNav .smallNavMenu li {
+  border-bottom: 2px solid white;
+  padding: 20px 20px 0 20px;
+}
+
+.headerContact .smallNav .smallNavMenu a {
+  color: #4C0341;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headerContact .smallNav .smallNavMenu a:hover {
+  color: white;
 }
 
 .headerContact .navigation {
@@ -531,97 +652,57 @@ footer h4 {
   background: white;
 }
 
-.new {
+.new, .option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.new .newArticle {
-  width: 50%;
-  padding: 4%;
+.new .newPhoto, .option .newPhoto {
+  -webkit-box-shadow: 20px 20px #FE6F19;
+          box-shadow: 20px 20px #FE6F19;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
-.new .newPhoto {
-  position: relative;
-  left: -9.5%;
-  top: -61px;
-  -webkit-box-shadow: 60px 55px #FE6F19;
-          box-shadow: 60px 55px #FE6F19;
+.new .optionPhoto, .option .optionPhoto {
+  -webkit-box-shadow: -20px 20px #FE6F19;
+          box-shadow: -20px 20px #FE6F19;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
-.new h2 {
-  font-size: 4.2rem;
-  font-family: "Pompiere", cursive;
-  text-transform: uppercase;
+.new .optionArticle, .option .optionArticle {
+  text-align: right;
+  padding-right: 8.5%;
 }
 
-.new a {
-  font-size: 2rem;
-  background: #882C07;
-  padding: 1% 2%;
-  text-transform: uppercase;
-  border: 2px solid #882C07;
-  color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.new .newArticle, .option .newArticle {
+  padding-left: 8.5%;
 }
 
-.new a:hover, .new a:focus {
-  color: black;
-  border: 2px solid black;
-}
-
-.option {
+.new .optionArticle, .new .newArticle, .option .optionArticle, .option .newArticle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.option .optionArticle {
-  width: 50%;
-  padding: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  z-index: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.option .optionPhoto {
-  position: relative;
-  right: -112px;
-  -webkit-box-shadow: -60px 55px #FE6F19;
-          box-shadow: -60px 55px #FE6F19;
-}
-
-.option h2 {
+.new .optionArticle h2, .new .newArticle h2, .option .optionArticle h2, .option .newArticle h2 {
   font-size: 4.2rem;
   font-family: "Pompiere", cursive;
   text-transform: uppercase;
-  text-align: right;
 }
 
-.option p {
-  text-align: right;
-}
-
-.option a {
+.new .optionArticle a, .new .newArticle a, .option .optionArticle a, .option .newArticle a {
   font-size: 2rem;
   background: #882C07;
   padding: 1% 2%;
@@ -632,9 +713,9 @@ footer h4 {
   transition: 0.3s;
 }
 
-.option a:hover, .option a:focus {
-  border: 2px solid black;
+.new .optionArticle a:hover, .new .optionArticle a:focus, .new .newArticle a:hover, .new .newArticle a:focus, .option .optionArticle a:hover, .option .optionArticle a:focus, .option .newArticle a:hover, .option .newArticle a:focus {
   color: black;
+  border: 2px solid black;
 }
 
 .about {
@@ -781,131 +862,86 @@ footer h4 {
 }
 
 .blog {
-  background: #FAE5FF;
-}
-
-.blog .blogFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
-.blog .blogFlex .asideWrapper {
+.blog aside {
+  margin: 5%;
+}
+
+.blog aside .asideArticle {
   background: white;
-  width: 90%;
-  margin-right: 10%;
-  margin-top: 20%;
-  padding: 5%;
-  position: relative;
+  padding: 0;
 }
 
-.blog .blogFlex .asideWrapper .asideArticle {
-  padding-top: 380px;
-  margin-right: 50px;
-}
-
-.blog .blogFlex .asideWrapper .asideArticle h3 {
-  font-family: "Pompiere", cursive;
-  font-size: 3rem;
-  color: #4C0341;
-  padding-top: 5%;
-}
-
-.blog .blogFlex .asideWrapper .asideArticle p {
-  line-height: 35px;
-}
-
-.blog .blogFlex .asideWrapper .asideArticle ul {
-  margin-left: 5.5%;
-}
-
-.blog .blogFlex .asideWrapper .asideArticle ul li {
-  list-style: unset;
-  line-height: 35px;
+.blog aside .asideArticle h3 {
   font-size: 2rem;
-}
-
-.blog .blogFlex .asideWrapper .asidePhoto {
-  position: absolute;
-  width: 500px;
-  top: -3%;
-  right: 5%;
-}
-
-.blog .blogFlex .blogMain {
-  -ms-flex-preferred-size: 150%;
-      flex-basis: 150%;
-}
-
-.blog .blogFlex .blogMain .commentSection h2 {
-  font-size: 4.2rem;
   font-family: "Pompiere", cursive;
   text-transform: uppercase;
   color: #4C0341;
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
-.blog .blogFlex .blogMain .commentSection blockquote {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 5%;
+.blog aside .asideArticle li {
+  font-size: 2rem;
+  padding: 2%;
 }
 
-.blog .blogFlex .blogMain .commentSection blockquote h4 {
+.blog h4 {
   color: black;
   font-size: 2rem;
   padding: 0;
   margin: 0;
-  padding-left: 5%;
 }
 
-.blog .blogFlex .blogMain .commentSection blockquote p {
-  padding: 4%;
-  padding-left: 5%;
+.blog .blogPhoto {
+  position: relative;
+  top: -170px;
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
 }
 
-.blog .blogFlex .blogMain .commentSection blockquote .personPhoto {
-  width: 40%;
-}
-
-.blog .blogFlex .blogMain .comment {
+.blog .blogArticle {
   background: white;
+  padding: 5%;
+  margin-top: -40%;
 }
 
-.blog .blogFlex .blogMain .comment .commentArticle {
-  width: 90%;
-  padding-left: 5%;
-}
-
-.blog .blogFlex .blogMain .comment .commentArticle h2 {
+.blog .blogArticle h2 {
+  font-size: 4.2rem;
   font-family: "Pompiere", cursive;
   text-transform: uppercase;
   color: #4C0341;
-  font-size: 5.2rem;
+  padding-top: 14%;
 }
 
-.blog .blogFlex .blogMain .comment .commentArticle p:first-of-type {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
+.blog .comment h2 {
+  font-size: 4.2rem;
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  color: #4C0341;
+  padding-top: 5%;
 }
 
-.blog .blogFlex .blogMain .comment .commentPhoto {
-  position: relative;
-  width: 105%;
-  right: -10.5%;
-  top: -160px;
-  -webkit-box-shadow: -80px 80px #FE6F19;
-          box-shadow: -80px 80px #FE6F19;
+.blog .comment blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.blog .blogFlex .blogMain form {
+.blog .comment blockquote .personPhoto {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding-right: 1%;
+}
+
+.blog .comment blockquote p {
+  padding: 2% 0;
+}
+
+.blog form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,7 +952,7 @@ footer h4 {
   padding: 5%;
 }
 
-.blog .blogFlex .blogMain form input {
+.blog form input {
   background: #FAE5FF;
   border: #FAE5FF;
   border-bottom: 2px solid #FE6F19;
@@ -926,14 +962,14 @@ footer h4 {
   font-size: 2rem;
 }
 
-.blog .blogFlex .blogMain form textarea {
+.blog form textarea {
   background: #FAE5FF;
   border: 2px solid #FE6F19;
   margin: 2%;
   font-size: 2rem;
 }
 
-.blog .blogFlex .blogMain form button {
+.blog form button {
   margin: 2%;
   background: #4C0341;
   color: white;
@@ -944,7 +980,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.blog .blogFlex .blogMain form button:hover, .blog .blogFlex .blogMain form button:focus {
+.blog form button:hover, .blog form button:focus {
   color: black;
   border: 3px solid black;
 }
@@ -1103,53 +1139,36 @@ header h5 .contactSkip:focus {
   right: 640px;
 }
 
-@media (max-width: 1400px) {
-  html {
-    font-size: 60%;
-  }
-}
-
-@media (max-width: 1000px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 40%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .headerMain .navigation {
-    display: none;
-  }
-  .headerMain .smallNav {
-    display: block;
-  }
-}
-
 @media (max-width: 800px) {
-  .headerMain .nav {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  .new {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .headerMain .logo {
-    display: none;
+  .new .newPhoto {
+    -webkit-box-shadow: 0 0 #FE6F19;
+            box-shadow: 0 0 #FE6F19;
+    padding: 10%;
   }
-}
-
-@media (max-width: 600px) {
-  .headerMain .landing {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 30%;
+  .new .newArticle {
+    text-align: center;
+    padding: 5%;
   }
-  .headerMain .landing .headerPhoto {
-    display: none;
+  .option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .option .optionPhoto {
+    -webkit-box-shadow: 0 0 #FE6F19;
+            box-shadow: 0 0 #FE6F19;
+    padding: 10%;
+  }
+  .option .optionArticle {
+    text-align: center;
+    padding: 5%;
   }
 }
 
@@ -1213,5 +1232,119 @@ header h5 .contactSkip:focus {
 @media (max-width: 500px) {
   .popular .popularMaster .popularPhoto {
     padding: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .blog aside {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog .blogPhoto {
+    -webkit-box-shadow: 0 0 #FE6F19;
+            box-shadow: 0 0 #FE6F19;
+  }
+  .blog .blogArticle {
+    padding: 8%;
+    margin-top: -50%;
+  }
+  .blog blockquote .personPhoto {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .blog .blogArticle {
+    padding: 12%;
+    margin-top: -60%;
+  }
+}
+
+@media (max-width: 800px) {
+  main .contactWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 600px) {
+  main .contactWrapper .form {
+    -webkit-box-shadow: 0 0 #FE6F19;
+            box-shadow: 0 0 #FE6F19;
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  main .contactWrapper .contactInfo h2 {
+    padding: 4% 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContact, .headerBlog {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerMain {
+    height: 70vh;
+  }
+  .headerMain .landing h2 {
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .headerMain .navigation, .headerBlog .navigation, .headerContact .navigation {
+    display: none;
+  }
+  .headerMain .smallNav, .headerBlog .smallNav, .headerContact .smallNav {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerMain .nav, .headerBlog .nav, .headerContact .nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .headerMain .logo, .headerBlog .logo, .headerContact .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerMain .landing, .headerBlog .landing, .headerContact .landing {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerMain .landing .headerPhoto, .headerBlog .landing .headerPhoto, .headerContact .landing .headerPhoto {
+    display: none;
   }
 }

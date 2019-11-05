@@ -33,7 +33,42 @@
     .smallNav {
         display: none;
         font-size: 4rem;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        color: $textColor;
+        position: fixed;
+        top: 0;
+        right: 10px;
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .smallNavMenu {
+            display: block;
+        }
+
+        .smallNavMenu {
+            font-family: $primaryFont;
+            background: black;
+            position: absolute;
+            right: -10px;
+            top: 70px;
+            display: none;
+            
+
+            li {
+                border-bottom: 2px solid white;
+                padding: 20px 20px 0 20px;
+            }
+
+            a {
+                color: $textColor;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
     }
 
     .navigation {
@@ -98,6 +133,47 @@
         padding: 1%;
     }
 
+    .smallNav {
+        display: none;
+        font-size: 4rem;
+        color: $textColor;
+        position: fixed;
+        top: 0;
+        right: 10px;
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .smallNavMenu {
+            display: block;
+        }
+
+        .smallNavMenu {
+            font-family: $primaryFont;
+            background: black;
+            position: absolute;
+            right: -10px;
+            top: 70px;
+            display: none;
+            
+
+            li {
+                border-bottom: 2px solid white;
+                padding: 20px 20px 0 20px;
+            }
+
+            a {
+                color: $textColor;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+
     .navigation {
         font-family: $secondaryFont;
         font-size: 2rem;
@@ -158,6 +234,47 @@
         justify-content: space-between;
         align-items: center;
         padding: 1%;
+    }
+
+    .smallNav {
+        display: none;
+        font-size: 4rem;
+        color: $textColor;
+        position: fixed;
+        top: 0;
+        right: 10px;
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .smallNavMenu {
+            display: block;
+        }
+
+        .smallNavMenu {
+            font-family: $primaryFont;
+            background: black;
+            position: absolute;
+            right: -10px;
+            top: 70px;
+            display: none;
+            
+
+            li {
+                border-bottom: 2px solid white;
+                padding: 20px 20px 0 20px;
+            }
+
+            a {
+                color: $textColor;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
     }
 
     .navigation {

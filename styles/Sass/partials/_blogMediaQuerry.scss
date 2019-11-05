@@ -1,0 +1,32 @@
+.blog {
+    @media (max-width: 800px) {
+        aside {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .blogPhoto {
+            box-shadow: 0 0 $borderColor;
+        }
+
+        .blogArticle {
+            padding: 8%;
+        margin-top: -50%;
+        }
+
+        blockquote {
+
+            .personPhoto {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .blogArticle {
+            padding: 12%;
+            margin-top: -60%;
+        }
+    }
+}

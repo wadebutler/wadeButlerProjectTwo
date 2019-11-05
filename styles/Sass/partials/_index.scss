@@ -38,88 +38,55 @@
     background: white;
 }
 
-.new {
+.new, .option {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .newArticle {
-        width: 50%;
-        padding: 4%;   
-    }
+    // padding: 1%;
 
     .newPhoto {
-        position: relative;
-        left: -9.5%;
-        top: -61px;
-        box-shadow: 60px 55px $borderColor;
-    }
-
-    h2 {
-        font-size: 4.2rem;
-        font-family: $primaryFont;
-        text-transform: uppercase;
-    }
-
-    a {
-        font-size: 2rem;
-        background: $accentColor;
-        padding: 1% 2%;
-        text-transform: uppercase;
-        border: 2px solid $accentColor;
-        color: white;
-        transition: 0.3s;
-    }
-
-    a:hover, a:focus {
-        color: black;
-        border: 2px solid black;
-    }
-}
-
-.option {
-    display: flex;
-    align-items: center;
-
-    .optionArticle {
-        width: 50%;
-        padding: 4%;   
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        z-index: 1;
+        box-shadow: 20px 20px $borderColor;
+        flex-basis: 45%;
     }
 
     .optionPhoto {
-        position: relative;
-        right: -112px;
-        box-shadow: -60px 55px $borderColor;
+        box-shadow: -20px 20px $borderColor;
+        flex-basis: 45%;
     }
 
-    h2 {
-        font-size: 4.2rem;
-        font-family: $primaryFont;
-        text-transform: uppercase;
+    .optionArticle {
         text-align: right;
+        padding-right: 8.5%;
     }
 
-    p {
-        text-align: right;
+    .newArticle {
+        padding-left: 8.5%;
     }
 
-    a {
-        font-size: 2rem;
-        background: $accentColor;
-        padding: 1% 2%;
-        text-transform: uppercase;
-        border: 2px solid $accentColor;
-        color: white;
-        transition: 0.3s;
-    }
+    .optionArticle, .newArticle {
+        display: flex;
+        flex-basis: 55%;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-    a:hover, a:focus {
-        border: 2px solid black;
-        color: black;
+        h2 {
+            font-size: 4.2rem;
+            font-family: $primaryFont;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: 2rem;
+            background: $accentColor;
+            padding: 1% 2%;
+            text-transform: uppercase;
+            border: 2px solid $accentColor;
+            color: white;
+            transition: 0.3s;
+        }
+
+        a:hover, a:focus {
+            color: black;
+            border: 2px solid black;
+        }
     }
 }
 

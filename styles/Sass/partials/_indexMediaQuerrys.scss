@@ -1,50 +1,30 @@
-// TEXT MEDIA QUERRY 
-html {
-    @media (max-width: 1400px) {
-        font-size: 60%;
-    }
+// NEW/OPTION MEDIA QUERRY
+@media (max-width: 800px) {
+    .new {
+        flex-direction: column;
 
-    @media (max-width: 1000px) {
-        font-size: 50%;
-    }
-
-    @media (max-width: 600px) {
-        font-size: 40%;
-    }
-}
-
-// HEADER MEDIA QUERRY
-.headerMain {
-
-    @media (max-width: 1400px) {
-        .navigation {
-            display: none;
+        .newPhoto {
+            box-shadow: 0 0 $borderColor;
+            padding: 10%;
         }
 
-        .smallNav {
-            display: block;
+        .newArticle {
+            text-align: center;
+            padding: 5%;
         }
     }
 
-    @media (max-width: 800px) {
+    .option {
+        flex-direction: column-reverse;
 
-        .nav {
-            justify-content: flex-end;
+        .optionPhoto {
+            box-shadow: 0 0 $borderColor;
+            padding: 10%;
         }
 
-        .logo {
-            display: none;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .landing {
-            justify-content: center;
-            margin-top: 30%;
-
-            .headerPhoto {
-                display: none;
-            }
+        .optionArticle {
+            text-align: center;
+            padding: 5%;
         }
     }
 }

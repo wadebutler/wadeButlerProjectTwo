@@ -1,0 +1,69 @@
+// TEXT MEDIA QUERRY 
+html {
+    @media (max-width: 1400px) {
+        font-size: 60%;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 40%;
+    }
+}
+
+// HEADER HEIGHT MEDIA QUERRY
+@media (max-width: 600px) {
+    .headerContact, .headerBlog {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerMain {
+        height: 70vh;
+
+        .landing {
+
+            h2 {
+                margin-top: 4%;
+            }
+        }
+    }
+}
+
+//  HEADER MEDIA QUERRY
+.headerMain, .headerBlog, .headerContact {
+
+    @media (max-width: 1400px) {
+        .navigation {
+            display: none;
+        }
+
+        .smallNav {
+            display: block;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .landing {
+            justify-content: center;
+
+            .headerPhoto {
+                display: none;
+            }
+        }
+    }
+}

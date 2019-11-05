@@ -1,0 +1,30 @@
+@media (max-width: 800px) {
+    main {
+
+        .contactWrapper {
+            flex-direction: column-reverse;
+
+            @media (max-width: 600px) {
+                .form {
+                    box-shadow: 0 0 $borderColor;
+                    position: static;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+
+        .contactWrapper {
+
+            .contactInfo {
+
+                h2 {
+                    padding: 4% 0;
+                }
+            }
+        }
+    }
+}
