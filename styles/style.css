@@ -248,7 +248,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .headerMain .landing .headerPhoto {
@@ -512,10 +511,10 @@ footer h4 {
   padding: 5%;
 }
 
-.sea span a {
+.sea a {
   font-size: 2rem;
   background: #4C0341;
-  padding: 12px 16px;
+  padding: 1% 2%;
   text-transform: uppercase;
   border: 2px solid #4C0341;
   color: white;
@@ -523,7 +522,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.sea span a:hover, .sea span a:focus {
+.sea a:hover, .sea a:focus {
   color: black;
   border: 2px solid black;
 }
@@ -563,10 +562,10 @@ footer h4 {
   text-transform: uppercase;
 }
 
-.new span a {
+.new a {
   font-size: 2rem;
   background: #882C07;
-  padding: 12px 16px;
+  padding: 1% 2%;
   text-transform: uppercase;
   border: 2px solid #882C07;
   color: white;
@@ -574,7 +573,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.new span a:hover, .new span a:focus {
+.new a:hover, .new a:focus {
   color: black;
   border: 2px solid black;
 }
@@ -622,10 +621,10 @@ footer h4 {
   text-align: right;
 }
 
-.option span a {
+.option a {
   font-size: 2rem;
   background: #882C07;
-  padding: 12px 16px;
+  padding: 1% 2%;
   text-transform: uppercase;
   border: 2px solid #882C07;
   color: white;
@@ -633,7 +632,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.option span a:hover, .option span a:focus {
+.option a:hover, .option a:focus {
   border: 2px solid black;
   color: black;
 }
@@ -710,16 +709,16 @@ footer h4 {
 }
 
 .popular .popularMaster .popularPhoto {
-  position: relative;
-  top: -40px;
-  left: -14px;
   -webkit-box-shadow: 40px 40px #FE6F19;
           box-shadow: 40px 40px #FE6F19;
+  margin-bottom: 4%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .popular .popularMaster .popularArticle {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,9 +726,8 @@ footer h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-left: 5%;
 }
 
@@ -739,10 +737,10 @@ footer h4 {
   color: #4C0341;
 }
 
-.popular .popularMaster .popularArticle span a {
+.popular .popularMaster .popularArticle a {
   font-size: 2rem;
   background: #882C07;
-  padding: 12px 16px;
+  padding: 1% 2%;
   text-transform: uppercase;
   width: 197px;
   border: 2px solid #882C07;
@@ -751,7 +749,7 @@ footer h4 {
   transition: 0.3s;
 }
 
-.popular .popularMaster .popularArticle span a:hover, .popular .popularMaster .popularArticle span a:focus {
+.popular .popularMaster .popularArticle a:hover, .popular .popularMaster .popularArticle a:focus {
   border: 2px solid black;
   color: black;
 }
@@ -1117,6 +1115,12 @@ header h5 .contactSkip:focus {
   }
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+
 @media (max-width: 1400px) {
   .headerMain .navigation {
     display: none;
@@ -1138,6 +1142,12 @@ header h5 .contactSkip:focus {
 }
 
 @media (max-width: 600px) {
+  .headerMain .landing {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30%;
+  }
   .headerMain .landing .headerPhoto {
     display: none;
   }
@@ -1151,6 +1161,33 @@ header h5 .contactSkip:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .popular .popularMaster .popularPhoto {
+    margin-bottom: 0;
+    -webkit-box-shadow: 0 0 #FE6F19;
+            box-shadow: 0 0 #FE6F19;
+  }
+}
+
+@media (max-width: 700px) {
+  .popular .popularMaster {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .popular .popularMaster .popularArticle {
+    padding-left: 0;
+  }
+  .popular .popularMaster .popularArticle a {
+    padding: 6px 8px;
+  }
+  .popular .popularMaster .popularPhoto {
+    padding: 15%;
   }
 }
 
@@ -1170,5 +1207,11 @@ header h5 .contactSkip:focus {
   .popular .popularBleed .popularGallery figure:hover {
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular .popularMaster .popularPhoto {
+    padding: 10%;
   }
 }

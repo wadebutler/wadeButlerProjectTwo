@@ -7,6 +7,10 @@ html {
     @media (max-width: 1000px) {
         font-size: 50%;
     }
+
+    @media (max-width: 600px) {
+        font-size: 40%;
+    }
 }
 
 // HEADER MEDIA QUERRY
@@ -35,6 +39,8 @@ html {
 
     @media (max-width: 600px) {
         .landing {
+            justify-content: center;
+            margin-top: 30%;
 
             .headerPhoto {
                 display: none;
@@ -52,9 +58,37 @@ html {
 }
 
 // POPULAR MEDIA QUERRY
-@media (max-width: 600px) {
-    .popular {
+.popular {
+    @media (max-width: 900px) {
+        .popularMaster {
+            
+            .popularPhoto {
+                margin-bottom: 0;
+                box-shadow: 0 0 $borderColor;
+            }
+        }
+    }
 
+    @media (max-width: 700px) {
+        .popularMaster {
+            flex-direction: column;
+            text-align: center;
+
+            .popularArticle {
+                padding-left: 0;
+
+                a {
+                    padding: 6px 8px;
+                }
+            }
+
+            .popularPhoto {
+                padding: 15%;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
         .popularBleed {
 
             .popularGallery {
@@ -71,6 +105,15 @@ html {
                 figure:hover {
                     transform: none;
                 }    
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .popularMaster {
+
+            .popularPhoto {
+                padding: 10%;
             }
         }
     }

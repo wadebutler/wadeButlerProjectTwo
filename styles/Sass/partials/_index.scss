@@ -16,23 +16,20 @@
         margin: 0 auto;
         padding: 5%;
     }
-
-    span {
         
-        a {
-            font-size: 2rem;
-            background: $textColor;
-            padding: 12px 16px;
-            text-transform: uppercase;
-            border: 2px solid $textColor;
-            color: white;
-            transition: 0.3s;
-        }
+    a {
+        font-size: 2rem;
+        background: $textColor;
+        padding: 1% 2%;
+        text-transform: uppercase;
+        border: 2px solid $textColor;
+        color: white;
+        transition: 0.3s;
+    }
 
-        a:hover, a:focus {
-            color: black;
-            border: 2px solid black;
-        }
+    a:hover, a:focus {
+        color: black;
+        border: 2px solid black;
     }
 }
 
@@ -63,23 +60,20 @@
         font-family: $primaryFont;
         text-transform: uppercase;
     }
-    
-    span {
 
-        a {
-            font-size: 2rem;
-            background: $accentColor;
-            padding: 12px 16px;
-            text-transform: uppercase;
-            border: 2px solid $accentColor;
-            color: white;
-            transition: 0.3s;
-        }
+    a {
+        font-size: 2rem;
+        background: $accentColor;
+        padding: 1% 2%;
+        text-transform: uppercase;
+        border: 2px solid $accentColor;
+        color: white;
+        transition: 0.3s;
+    }
 
-        a:hover, a:focus {
-            color: black;
-            border: 2px solid black;
-        }
+    a:hover, a:focus {
+        color: black;
+        border: 2px solid black;
     }
 }
 
@@ -112,23 +106,20 @@
     p {
         text-align: right;
     }
-    
-    span {
 
-        a {
-            font-size: 2rem;
-            background: $accentColor;
-            padding: 12px 16px;
-            text-transform: uppercase;
-            border: 2px solid $accentColor;
-            color: white;
-            transition: 0.3s;
-        }
+    a {
+        font-size: 2rem;
+        background: $accentColor;
+        padding: 1% 2%;
+        text-transform: uppercase;
+        border: 2px solid $accentColor;
+        color: white;
+        transition: 0.3s;
+    }
 
-        a:hover, a:focus {
-            border: 2px solid black;
-            color: black;
-        }
+    a:hover, a:focus {
+        border: 2px solid black;
+        color: black;
     }
 }
 
@@ -184,22 +175,21 @@
 // POPULAR THIS MONTH
 .popular {
     .popularMaster {
-    display: flex;
-    padding: 5% 1%;
-    justify-content: space-between;
+        display: flex;
+        padding: 5% 1%;
+        justify-content: space-between;
 
         .popularPhoto {
-            position: relative;
-            top: -40px;
-            left: -14px;
             box-shadow: 40px 40px $borderColor;
+            margin-bottom: 4%;
+            transition: 0.4s;
         }
 
         .popularArticle {
-            flex-basis: 70%;
+            flex-basis: 65%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             padding-left: 5%;
 
             h2 {
@@ -208,23 +198,20 @@
                 color: $textColor;
             }
 
-            span {
+            a {
+                font-size: 2rem;
+                background: $accentColor;
+                padding: 1% 2%;
+                text-transform: uppercase;
+                width: 197px;
+                border: 2px solid $accentColor;
+                color: white;
+                transition: 0.3s;
+            }
 
-                a {
-                    font-size: 2rem;
-                    background: $accentColor;
-                    padding: 12px 16px;
-                    text-transform: uppercase;
-                    width: 197px;
-                    border: 2px solid $accentColor;
-                    color: white;
-                    transition: 0.3s;
-                }
-
-                a:hover, a:focus {
-                    border: 2px solid black;
-                    color: black;
-                }
+            a:hover, a:focus {
+                border: 2px solid black;
+                color: black;
             }
         }
     }
