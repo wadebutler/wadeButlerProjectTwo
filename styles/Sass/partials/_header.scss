@@ -32,14 +32,18 @@
 
     .smallNav {
         display: none;
-        font-size: 4rem;
+        font-size: 6rem;
         color: $textColor;
         position: fixed;
         top: 0;
         right: 10px;
 
-        input[type="checkbox"] {
-            display: none;
+        input:focus + label {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        }
+
+        label:hover {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
         }
 
         input[type="checkbox"]:checked ~ .smallNavMenu {
@@ -65,7 +69,7 @@
                 transition: 0.3s;
             }
 
-            a:hover {
+            a:hover, a:focus {
                 color: white;
             }
         }
@@ -135,20 +139,26 @@
 
     .smallNav {
         display: none;
-        font-size: 4rem;
+        font-size: 6rem;
         color: $textColor;
         position: fixed;
         top: 0;
         right: 10px;
         z-index: 1;
 
-        input[type="checkbox"] {
-            display: none;
+        input:focus + label {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        }
+
+        label:hover {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
         }
 
         input[type="checkbox"]:checked ~ .smallNavMenu {
-            display: block;
+            display: block
         }
+
+        
 
         .smallNavMenu {
             font-family: $primaryFont;
@@ -169,7 +179,7 @@
                 transition: 0.3s;
             }
 
-            a:hover {
+            a:hover, a:focus {
                 color: white;
             }
         }
@@ -239,14 +249,19 @@
 
     .smallNav {
         display: none;
-        font-size: 4rem;
+        font-size: 6rem;
         color: $textColor;
         position: fixed;
         top: 0;
         right: 10px;
+        z-index: 1;
 
-        input[type="checkbox"] {
-            display: none;
+        input:focus + label {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        }
+
+        label:hover {
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
         }
 
         input[type="checkbox"]:checked ~ .smallNavMenu {
@@ -272,7 +287,7 @@
                 transition: 0.3s;
             }
 
-            a:hover {
+            a:hover, a:focus {
                 color: white;
             }
         }

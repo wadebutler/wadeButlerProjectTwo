@@ -20,9 +20,15 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .headerContact {
+        height: 30vh;
+    }
+}
+
 @media (max-width: 600px) {
     .headerMain {
-        height: 70vh;
+        height: 60vh;
 
         .landing {
 
@@ -30,6 +36,12 @@ html {
                 margin-top: 4%;
             }
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .headerMain {
+        height: 40vh;
     }
 }
 
@@ -43,17 +55,6 @@ html {
 
         .smallNav {
             display: block;
-        }
-    }
-
-    @media (max-width: 800px) {
-
-        .nav {
-            justify-content: flex-end;
-        }
-
-        .logo {
-            display: none;
         }
     }
 

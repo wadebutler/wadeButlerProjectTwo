@@ -286,15 +286,19 @@ img {
 
 .headerMain .smallNav {
   display: none;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #4C0341;
   position: fixed;
   top: 0;
   right: 10px;
 }
 
-.headerMain .smallNav input[type="checkbox"] {
-  display: none;
+.headerMain .smallNav input:focus + label {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.headerMain .smallNav label:hover {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .headerMain .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
@@ -321,7 +325,7 @@ img {
   transition: 0.3s;
 }
 
-.headerMain .smallNav .smallNavMenu a:hover {
+.headerMain .smallNav .smallNavMenu a:hover, .headerMain .smallNav .smallNavMenu a:focus {
   color: white;
 }
 
@@ -401,7 +405,7 @@ img {
 
 .headerBlog .smallNav {
   display: none;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #4C0341;
   position: fixed;
   top: 0;
@@ -409,8 +413,12 @@ img {
   z-index: 1;
 }
 
-.headerBlog .smallNav input[type="checkbox"] {
-  display: none;
+.headerBlog .smallNav input:focus + label {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.headerBlog .smallNav label:hover {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .headerBlog .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
@@ -437,7 +445,7 @@ img {
   transition: 0.3s;
 }
 
-.headerBlog .smallNav .smallNavMenu a:hover {
+.headerBlog .smallNav .smallNavMenu a:hover, .headerBlog .smallNav .smallNavMenu a:focus {
   color: white;
 }
 
@@ -517,15 +525,20 @@ img {
 
 .headerContact .smallNav {
   display: none;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #4C0341;
   position: fixed;
   top: 0;
   right: 10px;
+  z-index: 1;
 }
 
-.headerContact .smallNav input[type="checkbox"] {
-  display: none;
+.headerContact .smallNav input:focus + label {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.headerContact .smallNav label:hover {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .headerContact .smallNav input[type="checkbox"]:checked ~ .smallNavMenu {
@@ -552,7 +565,7 @@ img {
   transition: 0.3s;
 }
 
-.headerContact .smallNav .smallNavMenu a:hover {
+.headerContact .smallNav .smallNavMenu a:hover, .headerContact .smallNav .smallNavMenu a:focus {
   color: white;
 }
 
@@ -1117,36 +1130,6 @@ header h5 .mainSkip:focus {
   right: 45%;
 }
 
-header h5 .blogSkip {
-  text-decoration: none;
-  position: fixed;
-  right: -10000px;
-  top: 0;
-  font-size: 2rem;
-  background: #4C0341;
-  padding: 1%;
-  color: white;
-}
-
-header h5 .blogSkip:focus {
-  right: 45%;
-}
-
-header h5 .contactSkip {
-  text-decoration: none;
-  position: fixed;
-  right: -10000px;
-  top: 0;
-  font-size: 2rem;
-  background: #4C0341;
-  padding: 1%;
-  color: white;
-}
-
-header h5 .contactSkip:focus {
-  right: 45%;
-}
-
 @media (max-width: 800px) {
   .new {
     -webkit-box-orient: vertical;
@@ -1341,12 +1324,24 @@ header h5 .contactSkip:focus {
   }
 }
 
+@media (max-width: 400px) {
+  .headerContact {
+    height: 30vh;
+  }
+}
+
 @media (max-width: 600px) {
   .headerMain {
-    height: 70vh;
+    height: 60vh;
   }
   .headerMain .landing h2 {
     margin-top: 4%;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerMain {
+    height: 40vh;
   }
 }
 
@@ -1356,17 +1351,6 @@ header h5 .contactSkip:focus {
   }
   .headerMain .smallNav, .headerBlog .smallNav, .headerContact .smallNav {
     display: block;
-  }
-}
-
-@media (max-width: 800px) {
-  .headerMain .nav, .headerBlog .nav, .headerContact .nav {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .headerMain .logo, .headerBlog .logo, .headerContact .logo {
-    display: none;
   }
 }
 
